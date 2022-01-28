@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>equatable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //MARK: - Equatable
+    
+    public override func isEqual(_ object: Any?) -&gt; Bool {
+        guard let object = object as? &lt;#YourClass#&gt; else {
+            return false
+        }
+        return &lt;#iVar#&gt; == object.&lt;#iVar#&gt;
+        &amp;&amp; &lt;#iVar#&gt; == object.&lt;#iVar#&gt;
+        &amp;&amp; &lt;#iVar#&gt; == object.&lt;#iVar#&gt;
+    }
+    
+    public override var hash: Int {
+        var hasher = Hasher()
+        hasher.combine(&lt;#iVar#&gt;)
+        hasher.combine(&lt;#iVar#&gt;)
+        hasher.combine(&lt;#iVar#&gt;)
+        return hasher.finalize()
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E596881D-284E-4051-BE45-4EF938EB147E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>All methods needed for conforming a class to Equatable</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Equatable conformace</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

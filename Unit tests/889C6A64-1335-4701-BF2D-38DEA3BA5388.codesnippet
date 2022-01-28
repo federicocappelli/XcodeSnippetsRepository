@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>unittest_nssecurecoding</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//MARK: - NSSecureCoding
+    
+func testSecureCoding() {
+    
+    // Encode
+    let obj1 = &lt;#your object init#&gt;
+    let archivedData = try! NSKeyedArchiver.archivedData(withRootObject: obj1, requiringSecureCoding: true)
+    XCTAssertNotNil(archivedData)
+    
+    // Decode
+    let objDecoded = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(archivedData) as? &lt;#your object type#&gt;
+    XCTAssertEqual(obj1, objDecoded)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>889C6A64-1335-4701-BF2D-38DEA3BA5388</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Test if the object is conforming to NSSecureCoding</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Unit test NSSecureCoding</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

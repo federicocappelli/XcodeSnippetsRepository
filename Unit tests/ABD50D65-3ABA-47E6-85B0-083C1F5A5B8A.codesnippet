@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>unittest_equatable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//MARK: - Equality
+
+func testEquality() {
+    let lhs = &lt;#your A object init#&gt;
+    let rhs = &lt;#your A object init#&gt;
+    XCTAssertEqual(lhs, rhs)
+}
+
+func testInequality0() {
+    let lhs = &lt;#your A object init#&gt;
+    let rhs = &lt;#your B object init#&gt;
+    XCTAssertNotEqual(lhs, rhs)
+}
+
+func testInequality1() {
+    let lhs = &lt;#your A object init#&gt;
+    let rhs = &lt;#your B object init#&gt;
+    XCTAssertNotEqual(lhs, rhs)
+}
+
+func testInequality2() {
+    let lhs = &lt;#your A object init#&gt;
+    let rhs = &lt;#your B object init#&gt;
+    XCTAssertNotEqual(lhs, rhs)
+}
+
+func testHash() {
+    var set = Set&lt;&lt;#your object#&gt;&gt;()
+    
+    let obj1 = &lt;#your A object init#&gt;
+    let obj2 = &lt;#your B object init#&gt;
+    let obj3 = &lt;#your A object init#&gt;
+    
+    set.insert(obj1)
+    set.insert(obj2)
+    set.insert(obj3) // if hash works this is not present
+    XCTAssertEqual(set.count, 2)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ABD50D65-3ABA-47E6-85B0-083C1F5A5B8A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A series of tests for Equatable conformace</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Unit test Equality</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
